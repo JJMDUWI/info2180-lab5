@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World Database Lookup</title>
+    <link href="world.css" rel="stylesheet">
+    <script src="world.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="eyebrow">INFO2180 · LAB 5</p>
+        <h1>World Database Lookup</h1>
+        <p>Explore countries and the cities within them.</p>
+    </header>
+    <main>
+        <form id="controls">
+            <label for="country">Country</label>
+            <p id="search-help">Enter a full or partial country name. Leave blank to explore all countries.</p>
+            <div class="search-row">
+                <input id="country" type="search" name="country" placeholder="e.g. Jamaica" aria-describedby="search-help">
+                <button id="lookup" type="submit">Lookup</button>
+                <button id="lookup-cities" type="button">Lookup Cities</button>
+            </div>
+        </form>
+        <section aria-labelledby="results-heading">
+            <h2 id="results-heading">Results</h2>
+            <div id="result" aria-live="polite" aria-busy="false">
+                <p class="empty-state">Search for a country to get started.</p>
+            </div>
+        </section>
+    </main>
+    <footer>Jordan Morais-Duke · INFO2180</footer>
+</body>
+</html>
